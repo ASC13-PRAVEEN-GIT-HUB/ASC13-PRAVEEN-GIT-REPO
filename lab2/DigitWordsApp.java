@@ -7,18 +7,13 @@ public class DigitWordsApp {
             return;
         }
 
-        String[] words = {
-                "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"
+        String[] words = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"
         };
-
         String numStr = String.valueOf(number);
-
         for (char digit : numStr.toCharArray()) {
             System.out.print(words[digit - '0'] + " ");
         }
     }
-
-
     public static void main(String[] args) {
         int input = 654;
         System.out.print("Input: " + input + "\nOutput: ");

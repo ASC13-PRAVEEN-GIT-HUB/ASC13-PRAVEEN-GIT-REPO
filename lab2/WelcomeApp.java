@@ -1,8 +1,6 @@
 package lab2;
 
 public class WelcomeApp {
-
-
     public static String welcomeMessage(String name) {
         return "Hello " + name + ", Welcome to Java World!";
     }

@@ -14,26 +14,19 @@ class MeetingRoom {
         this.capacity = capacity;
         this.floor = floor;
     }
-
     public String getRoomId() {
         return roomId;
     }
-
     public int getCapacity() {
         return capacity;
     }
-
     public int getFloor() {
         return floor;
     }
-
-
     public String toString() {
         return "Room ID: " + roomId + ", Capacity: " + capacity + ", Floor: " + floor;
     }
 }
-
-
 class ZoomMeetingRoom extends MeetingRoom {
     private String zoomDeviceId;
     private String zoomAccountId;
@@ -52,7 +45,6 @@ class ZoomMeetingRoom extends MeetingRoom {
         return zoomAccountId;
     }
 
-    @Override
     public String toString() {
         return super.toString() + ", Zoom Device ID: " + zoomDeviceId + ", Zoom Account ID: " + zoomAccountId;
     }
@@ -76,13 +68,10 @@ class Booking {
     public LocalDate getDate() {
         return date;
     }
-
-    @Override
     public String toString() {
         return "Employee ID: " + employeeId + ", Room: " + roomId + ", Date: " + date + ", Time: " + time + ", Duration: " + durationInMinutes + " mins";
     }
 }
-
 
 class MeetingRoomManager {
     private List<MeetingRoom> rooms = new ArrayList<>();
