@@ -11,7 +11,7 @@ public class Student{
     private float feePerMonth;
     private boolean isEligibleForScholarship;
 
-    //getters an setters
+
     public int getStudentId() {
         return studentId;
     }

@@ -1,6 +1,6 @@
 package lab2;
 
-public class App {
+public class   App {
     public static void main(String[] args) {
         System.out.println("Welcome to the Meeting Room Application!");
         Booking bookings[] = new Booking[10]; // Array to hold bookings
