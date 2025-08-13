@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "ed986738-401f-4c8e-ba7e-3fd395a928fa",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47487725",
+		"_collection_link": "https://asc13-praveen-git-hub-5953530.postman.co/workspace/Praveen-Kumar's-Workspace~9cca2b15-2e97-4152-8601-608d1c5e556f/collection/47487725-ed986738-401f-4c8e-ba7e-3fd395a928fa?action=share&source=collection_link&creator=47487725"
+	},
+	"item": [
+		{
+			"name": "searchbyemail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6969/dost/a@a.com",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"dost",
+						"a@a.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {   \r\n        \"id\": 5,\r\n        \"courseName\": \"AI\",\r\n        \"courseAuthor\": \"Musk\",\r\n        \"durationInHour\": 5,\r\n        \"availability\": \"yes\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7575/test/addCourse",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"test",
+						"addCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getall course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7575/test/courses",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"test",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {   \r\n        \"id\": 1,\r\n        \"courseName\": \"AIML\",\r\n        \"courseAuthor\": \"Musk\",\r\n        \"durationInHour\": 5,\r\n        \"availability\": \"yes\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7575/test/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"test",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:7575/test/delete/2",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"test",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {   \r\n        \r\n           \"username\": \"roy\",\r\n           \"password\":\"roy1234\"\r\n       \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7575/test/login",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"test",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
